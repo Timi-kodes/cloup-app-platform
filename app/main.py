@@ -19,7 +19,7 @@ async def metrics_middleware(request, call_next):
         return response
     finally:
         LATENCY.labels(path=path).observe(time.time() - start)
-        # status might not exist if exception; keep it safe
+       
         REQUESTS.labels(path=path, method=request.method, status=locals().get("status", "500")).inc()
 
 @app.get("/health")
@@ -28,7 +28,7 @@ def health():
 
 @app.get("/orders")
 def orders():
-    # Fake “business endpoint”
+    
     return {
         "orders": [
             {"id": 1, "amount": round(random.uniform(5, 200), 2)},
