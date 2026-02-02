@@ -19,7 +19,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: arn:aws:iam::961624805624:user/timi-cli-user:role/github-actions-ecs-deploy
+        role-to-assume: arn:aws:iam::961624805624:role/github-actions-ecs-deploy
         aws-region: eu-north-1
 
     - name: Login to ECR
