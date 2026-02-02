@@ -1,6 +1,6 @@
 # Project Intention
 
-## I worked on this project to learn how **real production patterns** is used by devops teams. This project tasks was designed/generated with the help of ChatGPT to emulate real task in the companies/industry
+I worked on this project to learn how **real production patterns** is used by devops teams. This project tasks was designed/generated with the help of ChatGPT to emulate real task in the companies/industry
 
 # Cloud App Platform Project
 
