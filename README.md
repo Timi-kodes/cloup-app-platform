@@ -60,6 +60,7 @@ My focuses were on **system design, reliability, and operational correctness**.
 
 ## Repository Structure
 
+````bash
 cloud-app-platform/
 ├── app/
 │ ├── main.py
@@ -83,18 +84,18 @@ cloud-app-platform/
 │
 ├── .gitignore
 └── README.md
-
+```bash
 ---
 
 ## Application Endpoints
 
-- `GET /health`  
+- `GET /health`
   Used by the load balancer and ECS to determine task health.
 
-- `GET /orders`  
+- `GET /orders`
   Example business endpoint for traffic and latency testing.
 
-- `GET /metrics`  
+- `GET /metrics`
   Prometheus-formatted application metrics.
 
 ---
@@ -162,4 +163,4 @@ Clean teardown is part of operational discipline.
 cd terraform/ecs && terraform destroy
 cd ../network && terraform destroy
 cd ../backend && terraform destroy
-```
+````
