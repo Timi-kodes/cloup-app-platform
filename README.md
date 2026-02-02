@@ -60,7 +60,7 @@ My focuses were on **system design, reliability, and operational correctness**.
 
 ## Repository Structure
 
-````bash
+```bash
 cloud-app-platform/
 ├── app/
 │ ├── main.py
@@ -84,7 +84,8 @@ cloud-app-platform/
 │
 ├── .gitignore
 └── README.md
-```bash
+```
+
 ---
 
 ## Application Endpoints
@@ -163,4 +164,4 @@ Clean teardown is part of operational discipline.
 cd terraform/ecs && terraform destroy
 cd ../network && terraform destroy
 cd ../backend && terraform destroy
-````
+```
