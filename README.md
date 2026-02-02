@@ -69,14 +69,18 @@ cloud-app-platform/
 │
 ├── terraform/
 │ ├── backend/
+│ ├── ecr/
+│   └── main.tf
 │ ├── network/
-│ └── ecs/
-│ ├── main.tf
-│ ├── data.tf
-│ ├── variables.tf
-│ ├── terraform.tfvars
-│ ├── github-oidc.tf
-│ └── alarms.tf
+│    └── main.tf
+│
+│ ├── ecs/
+│  └── main.tf
+│  └── data.tf
+│  └── variables.tf
+│  └── terraform.tfvars
+│  └── github-oidc.tf
+│  └── alarms.tf
 │
 ├── .github/
 │ └── workflows/
